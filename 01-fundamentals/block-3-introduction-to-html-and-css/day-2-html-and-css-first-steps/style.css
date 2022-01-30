@@ -1,24 +1,22 @@
 h1 {
-    color: rgb(255, 0, 0);
+    color: rgb(230, 107, 0);
     font-size: 50px;
     line-height: 50px;;
   }
 
   h2 {
-    color: red;
+    color: rgb(230, 107, 0);
   }
 
   body {
-    background-color: snow;
-    font-family: monospace;
-    font-weight: 600;
+    font-family: sans-serif;
   }
 
   ol {
-    color: rgb(255, 0, 0);
+    color: rgb(230, 107, 0);
     text-decoration: underline;
   }
 
   a {
-    color: red;
+    color: rgb(230, 107, 0);
   }
