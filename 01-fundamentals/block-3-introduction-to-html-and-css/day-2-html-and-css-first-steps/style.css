@@ -1,0 +1,32 @@
+h1 {
+    color: rgb(230, 107, 0);
+    font-size: 50px;
+    line-height: 50px;;
+    background-color: grey;
+    background-size: 100px;
+  }
+
+  h2 {
+    color: rgb(230, 107, 0);
+  }
+
+  body {
+    font-family: sans-serif;
+  }
+
+  ol {
+    color: rgb(230, 107, 0);
+    text-decoration: underline;
+  }
+
+  a {
+    color: rgb(230, 107, 0);
+  }
+
+  li:hover {
+    background-color: grey;
+  }
+
+  li:active {
+
+  }
