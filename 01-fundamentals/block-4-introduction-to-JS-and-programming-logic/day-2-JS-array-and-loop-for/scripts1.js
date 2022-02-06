@@ -16,6 +16,7 @@ console.log(soma);
 
 //Exercise 3
 let soma = 0;
+
 for (i = 0; i < numbers.length; i+= 1) {
     soma += numbers[i];
 }
@@ -51,6 +52,7 @@ console.log(maior);
 
 //Exercise 6
 var impar = 0;
+
 for (let i = 0; i < numbers.length; i += 1) {
     if (numbers[i] % 2 !== 0) {
         impar ++;
