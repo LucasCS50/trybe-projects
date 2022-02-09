@@ -1,4 +1,5 @@
-/* //Exercise 1
+//Exercise 1
+
 var fatorial = 10;
 
 for (let i = 9; i >= 1; i -= 1) {
@@ -8,6 +9,7 @@ for (let i = 9; i >= 1; i -= 1) {
 console.log(fatorial);
 
 //Exercise 2
+
 let word = "tryber";
 let reverse = " ";
 
@@ -18,6 +20,7 @@ console.log(reverse);
 
 
 //Exercise 3
+
 let array = ['java', 'javascript', 'python', 'html', 'css'];
 var maior = array.sort()[4];
 var menor = array.sort()[0];
@@ -34,9 +37,8 @@ for (let b = 0; b < array.length; b += 1) {
     }
 }
 console.log(menor + maior); 
- */
+
 //Exercise 4
-/* 4- Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50. */
 
 for (let num = 2; num <= 50; num += 1) {
     let primo = true;
