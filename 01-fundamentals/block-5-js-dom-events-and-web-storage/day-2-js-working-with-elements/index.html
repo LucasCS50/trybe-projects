@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    //1.
+        let textH1 = document.createElement('h1');
+        textH1.innerText = "Exercise 5.2 - JavaScript DOM";
+        document.body.appendChild(textH1);
+    //2.
+        let mainText = document.createElement('main');
+        mainText.className = "main-content";
+        document.body.appendChild(mainText);
+    //3.
+        let createSection = document.createElement('section');
+        createSection.className = "center-content";
+        mainText.appendChild(createSection);
+    //4.
+        let paragraph = document.createElement('p');
+        paragraph.innerText = 'Text for the step 4 from exercises';
+        createSection.appendChild(paragraph);
+    //5.
+        let addSec = document.createElement('section');
+        addSec.className = "left-content";
+        mainText.appendChild(addSec);
+    //6.
+        let addSec2 = document.createElement('section');
+        addSec2.className = "right-content";
+        mainText.appendChild(addSec2);
+    //7.
+        let addImg = document.createElement('img');
+        addImg.className = 'small-image';
+        addImg.src = 'https://picsum.photos/200';
+        addSec.appendChild(addImg);
+    //8.
+        let listUl = document.createElement('ul');
+        addSec2.appendChild(listUl);
+        let listTen = ['One', 'Two', 'Three', 'Four ', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+
+        for (let i = 0; i < listTen.length; i += 1) {
+            let listLi = document.createElement('li');
+            listLi.innerText = listTen[i];
+            listUl.appendChild(listLi);
+        }
+    //9.
+        for (let i = 0; i <= 3; i + 1) {
+        let h3Tags = document.createElement('h3');
+        mainText.appendChild(h3Tags);
+        }
+        
+    //1.1
+
+    
+    </script>
+  </body>
+</html>
