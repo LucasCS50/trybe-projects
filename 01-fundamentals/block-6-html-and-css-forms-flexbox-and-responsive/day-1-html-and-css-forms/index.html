@@ -1,0 +1,74 @@
+<!-- form // cria formulario
+action //
+method // get or post 
+placeholder e required// dentro do input 
+label for // cria vinculo com o input 
+textarea // 
+input name // se igual permite selecionar apenas 1
+autofocus
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="" method="GET">
+        <label for="e-mail">
+        <input id="e-mail" type="checkbox" value="" name="">E-mail:</label>
+        <label for="text-input"></label>
+        <input type="text" placeholder="Type something" required name="texto" id="text-input" autocomplete="off" autofocus>
+        <button type="submit">Send</button>
+        <br>
+        <br>
+        <label for="select-text">
+            <input id="select-text" type="radio" value="a" name="a" >Delete
+        </label>
+        <label for="select-text2">
+            <input id="select-text2" type="radio" value="a" name="a">Insert
+        </label>
+        <br>
+        <br>
+        <label for="dropdown">Preference:
+            <select name="" id="dropdown">
+                <option value="">add to the list</option>
+                <option value="">remove to the list</option>
+            </select>
+          </label> 
+      </form>
+      <br>
+      <br>
+      <form action="" method="GET" enctype="multipart/form-data">
+            <input type="password" name="password" required>
+            <button type="submit">Send</button>
+            <input type="file" name="add-file">
+        </label>
+        <br><br>
+        <textarea name="" id="" cols="30" rows="10">Plese, insert your comments here</textarea>
+        <br><br>
+        
+
+      
+
+        <label for="nome-completo">Nome Completo:
+          <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
+        </label>
+        <br><br>
+        <label for="input-email">E-mail:
+          <input type="email" name="email" id="input-email" placeholder="Digite seu e-mail" required>
+        </label>
+        <br><br>
+        <label for="sexo">Sexo:
+          <select name="gender" id="sexo">
+            <option value="masc">Masculino</option>
+            <option value="fem">Feminino</option>
+          </select>
+        </label>
+         <button required>Send</button>
+      </form>
+</body>
+</html>
